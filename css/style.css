@@ -1,0 +1,188 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+
+/* Optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+.topnav {
+    background-color: #1E73BA;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: #F8F8F6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+.topnav a:hover {
+    color: #2B253A;
+}
+
+.topnav img {
+    margin-left: 2%;
+    width: 10vh;
+}
+
+.banner {
+    height: 35vh;
+    background-color: #1E73BA;
+    display: table-cell;
+    width: 100vw;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.banner .texto {
+    position: relative;
+    color: #F8F8F6;
+    top: 30%;
+    left: 1%;
+}
+
+.banner .texto h1 {
+    color: #F8F8F6;
+}
+
+.banner .texto p {
+    color: #2B253A;
+    font-size: 3vh;
+}
+
+.banner img {
+    margin-left: 30%;
+    float: left;
+    height: 80%;
+    background: #555;
+    border-radius: 50%;
+}
+
+.about {
+    position: relative;
+    overflow: hidden;
+}
+
+.about h1 {
+    margin-left: 5%;
+    font-family: 'Press Start 2P';
+    font-size: 3.4vh;
+    position: absolute;
+    animation: fade 1s linear;
+}
+
+.about p {
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: 2.4vh;
+    animation: fade 2s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.languages {
+    padding: 0;
+    margin-top: -1%;
+    background-color: #1E73BA;
+}
+
+.languages img {
+    width: 15vh;
+}
+
+.languages h1 {
+    text-align: center;
+    color: #F8F8F6;
+    margin-bottom: 4vh;
+}
+
+.languages .linha h4 {
+    text-align: center;
+}
+
+.languages h4 {
+    color: #F8F8F6;
+}
+
+.linha {
+    margin-left: 15vh;
+    background-color: #1E73BA;
+    float: left;
+    width: 7%;
+    height: 17vh;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+/* Clearfix (clear floats) */
+
+.coluna::after {
+    background-color: #1E73BA;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contactos {
+    background-color: #1E73BA;
+    margin-top: -1%;
+}
+
+.contactos h1 {
+    text-align: center;
+    color: #F8F8F6;
+}
+
+.contactos h4 {
+    text-align: center;
+    color: #F8F8F6;
+}
+
+.contactos .linha {
+    margin-left: 21%;
+    background-color: #1E73BA;
+    float: left;
+    width: 5%;
+    height: 17vh;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #1E73BA;
+    text-align: center;
+    color: #F8F8F6;
+}
+
+.footer a {
+    color: #dbd5d5;
+    text-decoration: none;
+}
